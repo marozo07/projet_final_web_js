@@ -1,0 +1,178 @@
+.content-1 h1 {
+  font-size: 2.5rem;
+}
+
+#Paragraphe {
+  position: relative;
+  background: url(/depositphotos_415071034-stock-photo-african-american-selecting-real-estate.jpg) center center / cover;
+  height: 90vh;
+  width: 100%;
+  z-index: 2;
+  mix-blend-mode: multiply;
+  overflow: hidden; /* Empêche le défilement */
+}
+
+.content-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  animation: slide-up cubic-bezier(0.23, 1, 0.320, 1)2s forwards; /* Animation */
+}
+
+@keyframes slide-up {
+  0% {
+      transform: translate(-50%, 50%);
+  }
+  50% {
+      transform: translate(-50%, -50%);
+  }
+}
+
+
+.form-container {
+  width: 400px;
+  background: linear-gradient(#e8cfcf, #ada3a3) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin-left: 35%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.form-container p {
+  font-size: 25px;
+  color: #352e2e;
+}
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #3d3b3b;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #352e2e;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #414141;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color:#fff;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-left: 6rem;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #447d87;
+  border-color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content-1 h1 {
+    font-size: 30px;
+  }
+  .content-1 p {
+    font-size: 16px;
+  }
+  .form-container {
+    width: 100%;
+    margin-left: 20rem;
+    justify-content: center;
+  }
+  .form-container .form-submit-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .content-1 h1 {
+    font-size: 24px;
+  }
+  .content-1 p {
+    font-size: 14px;
+  }
+  .form-container  {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+  
+  
+  .form-container .form-submit-btn {
+    width: 50%;
+  }
+}
+

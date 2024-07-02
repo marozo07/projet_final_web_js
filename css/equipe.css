@@ -1,0 +1,166 @@
+.content-1 h1 {
+    font-size: 2.5rem;
+}
+#Paragraphe {
+    position: relative;
+    background: url(/Travail-dequipe-Mag-min.jpg) center center / cover;
+    height: 90vh;
+    width: 100%;
+    z-index: 2;
+    mix-blend-mode: multiply;
+    overflow: hidden; /* Empêche le défilement */
+}
+
+.content-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    animation: slide-up 2s forwards; /* Animation */
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translate(-50%, 50%);
+    }
+    50% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.contenaire-3{
+    display: flex;
+    /* text-align: center; */
+    height: 70vh;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border: none;
+}
+.contenaire-image-3{
+
+    background: url(/img-beneficiaire-effectif-societe.jpg) center center / cover;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+
+
+}
+.contenaire-texte-1{
+    background: #313232;
+}
+.text-content{
+    transform: translate(0%, 100%);
+    /* text-align: center; */
+    color: white;
+    padding: 10px;
+}
+.text-content p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.contenaire{
+    display: flex;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin: 30px 50px;
+    
+}
+  
+.contenaire-image{
+    margin-right: 20px;
+    flex: 1;
+    text-align: center;
+    background: #969491;
+    border-radius: 10px;
+    box-shadow: 10px black;
+}
+
+.contenaire-image img{
+   width: 100%;
+   height: 30vh;
+   display: block;
+   border-radius: 10px;
+
+
+}
+.Mes-description {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+/* Responsive page equipes */
+@media (max-width: 1200px) {
+    .contenaire {
+        padding: 0 2rem;
+        margin: 20px 30px;
+    }
+
+    .contenaire-image {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .contenaire {
+        padding: 0 1rem;
+        margin: 10px 20px;
+    }
+
+    .contenaire-image {
+        flex: 1 1 100%;
+    }
+
+    .content-1 h1 {
+        font-size: 2rem;
+    }
+
+    .content-1 p {
+        font-size: 18px;
+    }
+
+    .text-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .content-1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-1 p {
+        font-size: 16px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+
+    .contenaire {
+        margin: 10px 0;
+        padding: 0;
+    }
+.contenaire-image-3 {
+    display: none;
+}
+    .contenaire-image img {
+        height: 20vh;
+        width: 100%;
+        
+    }
+}

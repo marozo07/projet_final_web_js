@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Myeongjo&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://kit.fontawesome.com/031a9e5271.js" crossorigin="anonymous"></script>
+  <title>Lendor | Accueil</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <h1 id="logo">
+        <i class="fa-solid fa-crown"></i><a href=""> Lendor </a>
+      </h1>
+      <ul>
+        <li class="active"><a href="/"> Accueil</a></li>
+        <li><a href="/offre"> Nos offres</a></li>
+        <li><a href="/equipe"> Notre équipe</a></li>
+        <li><a href="/contact"> Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="Paragraphe">
+    <div class="content-1">
+      <h1>
+        Un <span>immobilier</span>
+        d'exception <br>pour des clients d'exception
+      </h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing e lit. Veritatis
+        laudantium accusamus assumenda? Illum veritatis illo ex rerum fuga
+        voluptas odit sit temp oribus porro officia,nisi
+      </p>
+    </div>
+  </section>
+  <div>
+    <p class="acquisition"> Nos derniere acquisitions </p>
+  </div>
+
+  <section class="contenaire-1">
+
+    <div class="contenaire">
+
+      <div class="contenaire-image">
+        <img
+          src="/villa-luxe-piscine-design-contemporain-spectaculaire-art-numerique-immobilier-maison-maison-propriete-ge_1258-150749.jpg"
+          alt="" />
+        <div class="Mes-description">
+          <p>Appartement - Paris 75007</p>
+          <p>11 chambre 450 m2</p>
+          <p>_______
+          <p>
+            <br>
+          <p> 3 900 000 - $4 200 000</p>
+        </div>
+      </div>
+      <div class="contenaire-image ">
+        <img src="/rendu-3d-salle-manger-salon-modernes-decor-luxe_105762-1932.jpg" alt="" />
+        <div class="Mes-description">
+          <p>Appartement - Paris 75007</p>
+          <p>11 chambre 450 m2
+          <p>
+          <p>_______
+          <p>
+            <br>
+          <p> 3 900 000 - $4 200 000</p>
+        </div>
+      </div>
+      <div class="contenaire-image">
+        <img src="/salon-bois-blanc-rendu-3d-pres-chambre-haut_105762-2197.jpg" alt="" />
+        <div class="Mes-description">
+          <p>Appartement - Paris 75007</p>
+          <p>11 chambre 450 m2</p>
+          <p>_______
+          <p>
+            <br>
+          <p> 3 900 000 - $4 200 000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="contenaire-3">
+      <div class="contenaire-image-3"></div>
+      <div class="contenaire-texte-1">
+        <div class="text-content">
+          <h2>
+            Une équipe de <span>professionnels</span>
+            avec plus de 10 ans d'experience
+          </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing e lit.
+            Veritatis laudantium accusamus assumenda? Illum veritatis illo ex
+            rerum fuga voluptas odit sit temp oribus porro officia,nis
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Afficher les commentaires -->
+<section class="commentaire">
+	<div class="commentaires-item">
+		<div class="contenaire-comment">
+			<p class="texte">Ecoutez ce que nos clients pensent de nous</p>
+			<h3 id="comente">Nos derniers commentaires</h3>
+			<div id="liste-commentaire"></div>
+		</div>
+	</div>
+</section>
+
+<!-- faire commentaire -->
+<section>
+  <div class="form-container">
+    <p >Faire votre commentaire</p>
+    <form class="form"  id="comment-form" method="post" action="/commentaire">
+      <div class="form-group">
+        <label for="nom">Votre nom  complete</label>
+        <input type="text" id="nom" name="nom" required="" placeholder="Entre votre nom complete">
+      </div>
+     
+      <div class="form-group">
+        <label for="textarea">Votre message</label>
+        <textarea name="message" id="textarea" rows="10" cols="50" required="" placeholder="Votre commentaire"></textarea>
+      </div>
+      <button class="form-submit-btn" type="submit">commente</button>
+    </form>
+  </div>
+</section>
+  <footer>
+    <p id="footer-p">©Copyright 2024  Ing Valendino PIERRE </p>
+  </footer>
+</body>
+<script src="/script.js"></script>
+</html>

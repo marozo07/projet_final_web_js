@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* POUR LA PREMIERE SECTION DU PROJEJ*/
+.content-1 h1 {
+    font-size: 2.5rem;
+    
+}
+.content-1 p {
+    margin-top: 20px;
+    font-size: 1rem;}
+
+
+ /*POUR LA DEXIEUME SECTION DU PROJET*/
+
+ #Paragraphe {
+    position: relative;
+    background: url('/1_00-2019-01-08-1707.jpg') center center / cover;
+    height: 90vh;
+    width: 100%;
+    z-index: 2;
+    mix-blend-mode: multiply;
+    overflow: hidden; /* Empêche le défilement */
+}
+
+.content-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    animation: slide-up 2s forwards; /* Animation */
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translate(-50%, 50%);
+    }
+    50% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.acquisition{
+    padding: 4rem 0rem 0rem 11rem;
+}
+.contenaire{
+    display: flex;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin: 20px 100px 100px 100px;
+}
+  
+.contenaire-image{
+    margin-right: 20px;
+    flex: 1;
+    text-align: center;
+    background: #fff;
+    box-shadow: 20px;
+}
+
+.contenaire-image img{
+   width: 300px;
+   height: 30vh;
+   display: block;
+
+
+}
+.Mes-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 30px 0px;
+
+
+}
+/* POUR LA TROIIEUME SECTION DU PROJET*/
+
+.contenaire-3{
+    display: flex;
+    /* text-align: center; */
+    height: 70vh;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border: none;
+}
+.contenaire-image-3{
+    background: url(/travail-en-equipe.jpg) center center / cover;
+    height: 100%;
+    width: 100%;
+
+
+}
+.contenaire-texte-1{
+    background: #313232;
+}
+.text-content {
+    transform: translate(0%, 100%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.text-content p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* POUR LA QUATRIEUME SECTION DU PROJET*/
+
+.fa-quote-left, .fa-quote-right{
+    color: black;
+}
+
+.contenaire-comment .texte {
+    text-align: left;
+    padding: 15px 0 15px 10%;
+}
+.commentaires-item {
+    display: block;
+    width: 100%;
+    box-shadow: 1px 5px 4px 1px rgba(184, 181, 181, 0.6); 
+    padding: 20px 30px;
+    margin-bottom: 5%;
+}
+.commentaires-text {
+    width: 70%;
+    float: left;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+}
+.profile img {
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.profile h5 {
+    margin: 0;
+    font-size: 14px;
+}
+.profile h6 {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+.commentaire {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+#liste-commentaire {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 400px;
+    background: linear-gradient(#e8cfcf, #ada3a3) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-left: 35%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .form-container p {
+    font-size: 25px;
+    color: #352e2e;
+  }
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3d3b3b;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #352e2e;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #414141;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color:#fff;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-left: 6rem;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #447d87;
+    border-color: #fff;
+  }
+  
+/* Responsive page  accueil */
+@media (max-width: 1200px) {
+    .contenaire {
+        padding: 0 3rem;
+        margin: 20px 20px;
+    }
+
+    .contenaire-image {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .contenaire {
+        padding: 0 2rem;
+        margin: 15px 15px;
+    }
+
+    .contenaire-image {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .content-1 h1 {
+        font-size: 2.2rem;
+    }
+
+    .content-1 p {
+        font-size: 18px;
+    }
+
+    .text-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenaire {
+        padding: 0 1rem;
+        margin: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenaire-image {
+        margin:10px 15px;
+        width: 70%;
+
+    }
+    .contenaire-image img {
+        margin:0;
+        width: 100%;
+
+    }
+
+    .content-1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .content-1 p {
+        font-size: 16px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+
+    #Paragraphe {
+        height: 60vh;
+
+    }
+
+    .contenaire-3 {
+        flex-direction:flex;
+        width: 100%;
+        
+    
+    }
+
+    .contenaire-image-3  {
+        width:100%;
+
+
+    
+    }
+
+    .contenaire-texte-1 {
+        height: auto;
+    }
+
+    .commentaires-item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #commentaires p {
+        margin-left: 0;
+    }
+
+    #profile, #profile1 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #logo {
+        font-size: 1.5rem;
+    }
+
+    .content-1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-1 p {
+        font-size: 14px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+    
+
+    .contenaire {
+        margin: 10px 0;
+        padding: 0;
+        
+    }
+
+    .contenaire-image img {
+        height: 20vh;
+        width: 100%;
+
+    }
+
+    .contenaire-3 {
+        display: flex;
+        width: 100%;
+
+    
+    }
+
+    .contenaire-image-3 {
+        display: none;
+        width: 100%;
+        height: 40vh;
+        
+    
+    }
+
+    .commentaires-item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #commentaires p {
+        margin-left: 0;
+    }
+
+    #profile, #profile1 {
+        margin-left: 0;
+    }
+}
